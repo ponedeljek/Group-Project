@@ -25,7 +25,7 @@ file1 <- original %>%
          "월평균지출_저축금액비율",
          "월평균지출_기타금액비율") %>% 
   rename(country = "응답자국적코드", 
-         married = "배우자혼인상태코드", 
+         marriage = "배우자혼인상태코드", 
          partner_kor_living = "배우자한국거주여부", 
          partner_country = "배우자국적코드", 
          income = "월평균급여구간코드",
