@@ -34,7 +34,8 @@ file1 <- original %>%
          housing_rate = "월평균지출_주거비비율",
          remit_rate = "월평균지출_송금금액비율",
          saving_rate = "월평균지출_저축금액비율",
-         etc_rate = "월평균지출_기타금액비율")
+         etc_rate = "월평균지출_기타금액비율") %>% 
+  filter(is.na(income) == 0 & income > 0)
 
 # 기초통계량 요약 : 분석에 사용된 변수들의 관측치, 평균, 표준편차, 최솟값, 최댓값 등
 
