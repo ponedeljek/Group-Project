@@ -48,7 +48,7 @@ earning4 <- (2309/(511+2462+5981+2309))*100
 
 # table(file1$earning)
 freqEarning <- xtabs(~ earning, data = file1); freqEarning
-proportions(freqEarning)*100
+result_freqearning <- proportions(freqEarning)*100
 
 # 송금액구간비중
 remittance1 <- ((271/(271+643+426+539+1085+1192+1093+1373)))*100
