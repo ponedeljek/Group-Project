@@ -62,7 +62,7 @@ remittance8 <- ((1373/(271+643+426+539+1085+1192+1093+1373)))*100
 
 # table(file1$remittance)
 freqRemittance <- xtabs(~remittance, data = file1); freqRemittance
-proportions(freqRemittance) * 100
+result_freqremittance <- proportions(freqRemittance) * 100
 
 
 # 평균
