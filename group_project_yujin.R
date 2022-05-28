@@ -65,6 +65,49 @@ freqRemittance <- xtabs(~remittance, data = file1); freqRemittance
 proportions(freqRemittance) * 100
 
 
+# 평균
+file2 <-file1 %>%  filter(is.na(file1$remit_rate)==F &
+                            is.na(file1$living_rate)==F &
+                            is.na(file1$housing_rate)==F &
+                            is.na(file1$saving_rate)==F &
+                            is.na(file1$etc_rate)==F)
+
+mean(file2$remit_rate)
+sd(file2$remit_rate)
+min(file2$remit_rate)
+max(file2$remit_rate)
+median(file2$remit_rate)
+quantile(file2$remit_rate, prob=0.25)
+quantile(file2$remit_rate, prob=0.75)
+
+mean(file2$living_rate)
+sd(file2$living_rate)
+min(file2$living_rate)
+max(file2$living_rate)
+median(file2$living_rate)
+quantile(file2$living_rate)
+
+mean(file2$housing_rate)
+sd(file2$housing_rate)
+min(file2$housing_rate)
+max(file2$housing_rate)
+median(file2$housing_rate)
+quantile(file2$housing_rate)
+
+mean(file2$saving_rate)
+sd(file2$saving_rate)
+min(file2$saving_rate)
+max(file2$saving_rate)
+median(file2$saving_rate)
+quantile(file2$saving_rate)
+
+mean(file2$etc_rate)
+sd(file2$etc_rate)
+min(file2$etc_rate)
+max(file2$etc_rate)
+median(file2$etc_rate)
+quantile(file2$etc_rate)
+
 
 # 시각화 관련 : 산점도 1개, 선 그래프 1개, 막대 그래프 1개, 지도 그래프 1개 
 
